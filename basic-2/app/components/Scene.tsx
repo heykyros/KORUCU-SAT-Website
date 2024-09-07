@@ -51,7 +51,7 @@ export function Scene() {
   
 
   useFrame(({ clock }) => {
-    ref.current.rotation.z = clock.getElapsedTime() / 8
+    ref.current.rotation.z = clock.getElapsedTime() / 18
     ref.current.scale.setScalar(8*Math.sin(clock.getElapsedTime() / 8) + 9.5)
   })
 
@@ -70,7 +70,7 @@ export function Scene() {
           transparent
           depthWrite={false}
           vertexColors
-          opacity={0.6}
+          opacity={1.6}
           depthTest
           size={0.01}
         />
