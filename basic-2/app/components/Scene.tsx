@@ -20,12 +20,12 @@ function useScrollEffect(ref: React.RefObject<THREE.Group>, setRotationActive: (
   const cameraPans = [
     [0, 0, 0], // Pan for Position 1
     [5, -115, -5],  // Pan for Position 2
-    [5, 0, -5],   // Pan for Position 3
+    [5, -115, -5],   // Pan for Position 3
   ];
 
   const scrollThresholds = [
     0,       // Position 1 at top
-    1100,     // Position 2
+    1200,     // Position 2
     2000,    // Position 3
   ];
 
@@ -48,7 +48,7 @@ function useScrollEffect(ref: React.RefObject<THREE.Group>, setRotationActive: (
 
   useEffect(() => {
     // Determine whether to activate rotation based on scroll position
-    const rotationActive = scrollY < scrollThresholds[1]; // Stop rotation after the first threshold
+    const rotationActive = true
     setRotationActive(rotationActive);
 
     // Determine the index of the target scale based on scroll position
@@ -198,8 +198,8 @@ export function Scene() {
           intensity={2}
           luminanceThreshold={0.001}
           luminanceSmoothing={0.225}
-          height={5000}
-          width={5000}
+          height={900}
+          width={900}
         />
       </EffectComposer>
     </group>

@@ -54,14 +54,7 @@ export default function Mission() {
                 <p className="text-md font-poppins mt-2">The Society seeks to build a diverse and enthusiastic community that actively contributes to scientific discovery and develops essential skills and knowledge for addressing global challenges.</p>
               </div>
 
-              <div className="w-1/4 h-min-[200px] flex flex-col bg-gradient-to-r from-gray-50/20 to-gray-50/10 p-6 rounded-2xl backdrop-blur">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 stroke-button-purple">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-                </svg>
-                <h1 className="text-lg font-semibold font-poppins mt-2">Lorem Ispum</h1>  
-                <p className="text-md font-poppins mt-2">The society seeks to build a diverse and enthusiastic community that actively contributes to scientific discovery and develops essential skills and knowledge for addressing global challenges.</p>
-              </div>
-              
+            
             </div>
 
 
