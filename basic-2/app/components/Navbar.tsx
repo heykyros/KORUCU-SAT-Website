@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <>
             <div className="flex justify-between items-center w-full h-[10vh] z-10">
-                <Link href="/" className='ml-[105px] h-full hover:scale-110 transition duration-500'>
+                <Link href="/" className='lg:ml-[105px] h-full hover:scale-110 transition duration-500'>
                     <Image src={logo} alt="image" className='w-full h-full' />
                 </Link>
                 {/* div containing all the links to projects */}
