@@ -3,8 +3,18 @@ import { Canvas } from '@react-three/fiber';
 import { Scene } from "../app/components/Scene";
 import Navbar from '../app/components/Navbar';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function Home() {
+  let windowWidth: number;
+  let mobile: boolean;
+  // console.log(windowWidth);
+  useEffect(() => {
+    windowWidth = window.innerWidth;
+    mobile = windowWidth <= 768;
+    console.log(windowWidth);
+  }, []);
+  
   return (
     <>
       <div className="relative w-[100vw] h-[100vh] z-0">
@@ -25,8 +35,8 @@ export default function Home() {
               <h2 className='mt-[10px] font-poppins w-2/3 text-lg text-gray-300'>
                 Empowering the next generation of astronomers, regardless of background.
               </h2>
-              <button className='bg-custom-purple mt-[30px] w-[150px] justify-center items-center h-[45px] rounded-[24px] flex' onClick={() => window.scrollTo({ top: 1150, behavior: "smooth" })}
->                <h1 className='text-[15px] w-full font-semibold'>Learn More</h1>
+              <button className='bg-custom-purple mt-[30px] w-[150px] justify-center items-center h-[45px] rounded-[24px] flex' onClick={() => mobile ? window.scrollTo({ top: 800, behavior: "smooth" }) : window.scrollTo({ top: 1000, behavior: "smooth" })}>                
+                <h1 className='text-[15px] w-full font-semibold'>Learn More</h1>
               </button>
             </div>
           </div>
