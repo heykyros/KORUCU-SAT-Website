@@ -107,7 +107,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-transparent w-full mt-2">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-[5vw]">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 hover:scale-110 duration-300 transition">
             <Link href="/" className="text-xl font-bold text-white-900">
@@ -129,7 +129,7 @@ export default function Navbar() {
               </SheetContent>
             </Sheet>
           ) : (
-            <div className="hidden md:flex md:flex-1 md:justify-center">
+            <div className="hidden md:flex md:flex-1 md:justify-end pr-4">
               <div className="flex space-x-8 items-center text-xl">
                 <NavItems />
               </div>

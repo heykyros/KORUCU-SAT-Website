@@ -28,7 +28,7 @@ export default function Home() {
         <div className="relative w-[100vw] h-auto flex flex-col items-center p-2 overflow-hidden z-10">
           <Navbar />
           <div className='w-full lg:w-[40vw] flex flex-col items-center lg:place-self-start mt-[20vh] lg:mt-16 h-auto'>
-            <div className='lg:hero-page-content lg:ml-[10vw] flex flex-col items-center lg:items-start text-center lg:text-start'>
+            <div className='lg:hero-page-content lg:ml-[5vw] flex flex-col items-center lg:items-start text-center lg:text-start'>
               <h1 className='flex-row font-semibold lg:leading-[10vh] font-poppins text-5xl lg:text-7xl mb-2 lg:mb-0'>
                 Astronomy Society of <span className='bg-gradient-to-r from-custom-purple to-custom-orange bg-clip-text text-transparent'>FSA</span>
               </h1>
