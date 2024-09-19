@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar";
 import { Canvas } from '@react-three/fiber';
 import Earth from "@/public/Earth.png";
-import Image from 'next/image';
+import Image from 'next/image'; 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 export default function CubesatPage() {

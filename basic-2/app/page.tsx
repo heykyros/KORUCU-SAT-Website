@@ -1,18 +1,18 @@
 'use client';
 import { Canvas } from '@react-three/fiber';
 import { Scene } from "../app/components/Scene";
-import Navbar from '../app/components/Navbar';
+import Navbar from './components/Navbar';
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Home() {
-  let windowWidth: number;
-  let mobile: boolean;
+  const windowWidth = useRef(0);
+  const mobile = useRef(false);
   // console.log(windowWidth);
   useEffect(() => {
-    windowWidth = window.innerWidth;
-    mobile = windowWidth <= 768;
-    console.log(windowWidth);
+      windowWidth.current = window.innerWidth;
+      mobile.current = windowWidth.current <= 768;
+      // console.log(windowWidth);
   }, []);
   
   return (
