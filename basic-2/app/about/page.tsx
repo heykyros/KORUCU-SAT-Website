@@ -21,7 +21,7 @@ export default function Mission() {
             <Navbar />
             {/* top area */}
             <h1 className='text-6xl mt-8 font-poppins font-semibold'>About Us</h1>
-            <p className="my-[8vh] text-xl font-poppins w-1/2 text-center text-gray-400">
+            <p className="my-[8vh] text-xl font-poppins w-3/4 lg:w-1/2 text-center text-gray-400">
               ASFSA is dedicated to cultivating the next generation of space explorers, engineers, and scientists. Our main objective is to equip our members with the necessary resources, tools, knowledge, and skills to pursue astronomical projects that further their understanding of the universe.
             </p>
             

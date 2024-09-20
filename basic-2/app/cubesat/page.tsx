@@ -5,7 +5,7 @@ import Earth from "@/public/Earth.png";
 import Image from 'next/image'; 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import TwinklingBackground from "../components/Twinkle";
-
+import Moon from "@/public/Moonbg.png";
 export default function CubesatPage() {
     return(
         <>
@@ -45,6 +45,13 @@ export default function CubesatPage() {
                 speed={1}
                 >
                     <Content />
+                </ParallaxLayer>
+                <ParallaxLayer
+                offset={1}
+                speed={1}
+                factor={1}
+                >
+                    <Image src={Moon} alt="Moon" />
                 </ParallaxLayer>
             </Parallax>
         </>
