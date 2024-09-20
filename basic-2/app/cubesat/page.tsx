@@ -4,11 +4,12 @@ import { Canvas } from '@react-three/fiber';
 import Earth from "@/public/Earth.png";
 import Image from 'next/image'; 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import TwinklingBackground from "../components/Twinkle";
 
 export default function CubesatPage() {
     return(
         <>
-            
+            <TwinklingBackground />
             <Parallax pages={2}>
                 <ParallaxLayer
                     offset={0}
@@ -43,7 +44,17 @@ export default function CubesatPage() {
                 <ParallaxLayer
                 speed={1}
                 >
-                <Navbar />
+                    <Content />
+                </ParallaxLayer>
+            </Parallax>
+        </>
+    )
+}
+
+function Content()  {
+    return (
+        <>
+        <Navbar />
                     <div className="w-screen h-auto flex flex-col items-center">
                         <div className="text-6xl drop-shadow-[0_35px_35px_rgba(0,0,0,1)] font-poppins font-bold text-center mt-[30vh] w-[45vh] rounded-3xl bg-gradient-to-br">KorucuSAT</div>        
                             <p className="text-2xl drop-shadow-[0_35px_35px_rgba(0,0,0,1)] font-poppins font-semibold text-center mt-[6vh] w-1/2 text-white ">
@@ -78,8 +89,7 @@ export default function CubesatPage() {
                             </div>
                     </div>
                     
-                </ParallaxLayer>
-            </Parallax>
         </>
+
     )
 }

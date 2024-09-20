@@ -123,7 +123,7 @@ export default function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[240px] sm:w-[300px] bg-white/10 backdrop-blur border-0">
-                <nav className="flex flex-col space-y-4 mt-4">
+                <nav className="flex flex-col space-y-4 mt-16">
                   <NavItems />
                 </nav>
               </SheetContent>
