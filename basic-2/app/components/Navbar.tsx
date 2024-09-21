@@ -21,12 +21,12 @@ const navItems = [
   { name: "KorucuSAT", href: "/cubesat" },
   {
     name: "Projects",
-    href: "/projects",
-    dropdownItems: [
-      { name: "Project 1", href: "/projects/1" },
-      { name: "Project 2", href: "/projects/2" },
-      { name: "Project 3", href: "/projects/3" },
-    ],
+    href: "/projects"
+    // dropdownItems: [
+    //   { name: "Project 1", href: "/projects/1" },
+    //   { name: "Project 2", href: "/projects/2" },
+    //   { name: "Project 3", href: "/projects/3" },
+    // ],
   },
   { name: "Contact", href: "/contact" },
 ]
@@ -106,7 +106,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-transparent w-full mt-2">
+    <nav className="bg-transparent w-full mt-4 lg:mt-8">
       <div className=" mx-auto px-4 sm:px-6 lg:px-[5vw]">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 hover:scale-110 duration-300 transition">

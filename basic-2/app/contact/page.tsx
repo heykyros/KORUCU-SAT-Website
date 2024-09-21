@@ -1,10 +1,12 @@
 import Navbar from "../components/Navbar";
+import TwinklingBackground from "../components/Twinkle";
 
 export default function ContactPage() {
 
     return(
         <>
             <Navbar />
+            <TwinklingBackground />
             <div className="h-screen w-screen flex flex-col items-center p-[10vh]">
                 <h1 className="text-center text-5xl font-poppins font-medium">Get in Touch</h1>
                 <h2 className="mt-8 text-2xl font-poppins text-center">
