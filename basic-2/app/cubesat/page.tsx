@@ -6,9 +6,11 @@ import Image from 'next/image';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import TwinklingBackground from "../components/Twinkle";
 import Moon from "@/public/Moonbg.png";
+import CubesatNew from "./pageTest";
 export default function CubesatPage() {
     return(
         <>
+        {/* <CubesatNew /> */}
             <TwinklingBackground />
             <Parallax pages={2}>
                 <ParallaxLayer

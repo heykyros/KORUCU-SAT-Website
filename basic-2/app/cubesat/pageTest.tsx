@@ -6,15 +6,15 @@ import Image from 'next/image';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import TwinklingBackground from "../components/Twinkle";
 import Moon from "@/public/Moonbg.png";
-export default function CubesatPage() {
+export default function CubesatNew() {
     return(
         <>
             <TwinklingBackground />
             <Parallax pages={3}>
                 <ParallaxLayer
                     offset={.7}
-                    speed={2}
-                    factor={1}
+                    speed={3}
+                    factor={1}  
                 >
                     <Image src={Earth} alt="Earth" className="ml-[1vw] lg:ml-[4vw]"/>
                 </ParallaxLayer>
@@ -37,20 +37,20 @@ export default function CubesatPage() {
                     speed={1}
                     factor={1}
                 >
-                    <div className="flex w-2/3 h-[20vh] justify-between mt-[95vh]">
-                                <div className="flex flex-col">
-                                    <h1 className="text-5xl font-poppins font-bold">22</h1>
-                                    <p className="text-2xl font-poppins font-medium">STUDENTS CURRENTLY INVOLVED</p>
-                                </div>
-                                <div className="flex flex-col">
-                                    <h1 className="text-5xl font-poppins font-bold">200+</h1>
-                                    <p className="text-2xl font-poppins font-medium">IMPACTED THROUGH OUTREACH</p>
-                                </div>
-                                <div className="flex flex-col">
-                                    <h1 className="text-5xl font-poppins font-bold">3</h1>
-                                    <p className="text-2xl font-poppins font-medium">OFFICIAL UNIVERSITY AFFILIATIONS</p>
-                                </div>
+                    <div className="flex w-2/3 h-[20vh] justify-between mt-[25vh] self-center">
+                            <div className="flex flex-col">
+                                <h1 className="text-5xl font-poppins font-bold">22</h1>
+                                <p className="text-2xl font-poppins font-medium">STUDENTS CURRENTLY INVOLVED</p>
                             </div>
+                            <div className="flex flex-col">
+                                <h1 className="text-5xl font-poppins font-bold">200+</h1>
+                                <p className="text-2xl font-poppins font-medium">IMPACTED THROUGH OUTREACH</p>
+                            </div>
+                            <div className="flex flex-col">
+                                <h1 className="text-5xl font-poppins font-bold">3</h1>
+                                <p className="text-2xl font-poppins font-medium">OFFICIAL UNIVERSITY AFFILIATIONS</p>
+                            </div>
+                        </div>
                 </ParallaxLayer>
                     
             </Parallax>
