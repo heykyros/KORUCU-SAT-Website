@@ -15,24 +15,32 @@ function useScrollEffect(ref: React.RefObject<THREE.Group>, setRotationActive: (
     [8, 4, 5],  // Position 1
     [3, 4, 5],  // Position 2
     [3, 4, 5],  // Position 3
+    [3, 4, 5],  // Position 4
+    [3, 4, 5],  // Position 5
   ];
 
   const cameraPans = [
     [0, 0, 0], // Pan for Position 1
     [5, -115, -5],  // Pan for Position 2
     [5, -115, -5],   // Pan for Position 3
+    [5, -115, -5],   // Pan for Position 4
+    [5, -115, -5],   // Pan for Position 5
   ];
 
   const scrollThresholds = [
     0,       // Position 1 at top
-    1200,     // Position 2
-    2000,    // Position 3
+    800,     // Position 2
+    1200,    // Position 3
+    1400,    // Position 4
+    2000,    // Position 5
   ];
 
   const scaleFactors = [
-    8,      // Scale for Position 1
-    2,    // Scale for Position 2
-    16,      // Scale for Position 3
+    8,     // Scale for Position 1
+    3,    // Scale for Position 2
+    4,      // Scale for Position 3
+    5,      // Scale for Position 4
+    8,      // Scale for Position 5
   ];
 
   useEffect(() => {

@@ -78,7 +78,7 @@ export default function CubesatNew() {
                         <div className="w-screen h-full flex flex-col justify-center items-center ">
                             <div className="w-full lg:w-2/3 flex flex-col items-center justify-center">
                                 <h1 className="text-3xl lg:text-5xl font-poppins font-bold text-center">
-                                    OUR MOST <span className="bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent">AMBITIOUS</span> PROJECT YET
+                                    Our Most <span className="bg-gradient-to-r from-orange-300 to-orange-700 bg-clip-text text-transparent">Ambitious</span> Project Yet
                                 </h1>
                                 <p className="mt-[3vh] lg:mt-[10vh] text-xl font-poppins w-3/4 text-center">
                                     KorucuSat aims to correlate the intensity of solar radiation in Earth’s upper ionosphere with both geomagnetic activity and plasma density. Currently, the satellite team is engaged in writing an application for NASA’s Cubesat Launch Initiative (CSLI) grant, which offers comprehensive funding for all launch-associated costs.

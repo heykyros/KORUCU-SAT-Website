@@ -19,15 +19,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "KorucuSAT", href: "/cubesat" },
-  {
-    name: "Projects",
-    href: "/projects"
-    // dropdownItems: [
-    //   { name: "Project 1", href: "/projects/1" },
-    //   { name: "Project 2", href: "/projects/2" },
-    //   { name: "Project 3", href: "/projects/3" },
-    // ],
-  },
+  { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -77,7 +69,7 @@ const NavItem = ({ item, isMobile }: { item: any; isMobile: boolean }) => {
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Link
         href={item.href}
-        className="text-lg font-medium text-white-300 hover:scale-50"
+        className="text-2xl font-medium text-white-300 hover:scale-50"
       >
         {item.name}
       </Link>
@@ -107,7 +99,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-transparent w-full mt-4 lg:mt-8">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-[5vw]">
+      <div className="mx-auto px-4 sm:px-6 lg:px-[5vw] font-poppin">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 hover:scale-110 duration-300 transition">
             <Link href="/" className="text-xl font-bold text-white-900">
@@ -129,7 +121,7 @@ export default function Navbar() {
               </SheetContent>
             </Sheet>
           ) : (
-            <div className="hidden md:flex md:flex-1 md:justify-end pr-4">
+            <div className="hidden md:flex md:justify-end flex-1 pr-4">
               <div className="flex space-x-8 items-center text-xl">
                 <NavItems />
               </div>
