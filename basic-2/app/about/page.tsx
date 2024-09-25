@@ -15,24 +15,32 @@ export default function Mission() {
   return (
     <>
       <TwinklingBackground />
-      <div className="relative w-[100vw] h-[100vh] z-0 overflow-hidden">
-        <Parallax pages={2} style={{ top: '0', left: '0' }}>
-          <ParallaxLayer offset={0} speed={1.5}>
+      <div className="relative w-[100vw] h-[100vh] z-0 flex flex-col items-center overflow-x-hidden">
+        
             <div className="relative w-full h-auto flex flex-col items-center p-2 z-10">
               <Navbar />
               <h1 className='text-6xl mt-[12vh] font-poppins font-semibold'>About Us</h1>
               <p className="my-[8vh] text-xl font-poppins w-3/4 lg:w-1/2 text-center text-gray-400">
-                ASFSA is dedicated to cultivating the next generation of space explorers, engineers, and scientists. Our main objective is to equip our members with the necessary resources, tools, knowledge, and skills to pursue astronomical projects that further their understanding of the universe.
+              The Astronomy Society of Fulton Science Academy (ASFSA) is a vibrant community composed of current students, alumni, faculty, and affiliated enthusiasts and experts passionate about exploring space. ASFSA is dedicated to inspiring and educating the next generation of scientists, engineers, and informed global citizens through immersive, hands-on experiences in space exploration and astronomical research.
+              <br />Our mission is to foster a diverse and enthusiastic epistemic community that actively contributes to scientific discovery while equipping students with the skills and knowledge necessary to address the challenges facing humanity. We strive to cultivate a deep understanding of the universe and its intricate connections to the Earth system by engaging students in cutting-edge projects, including CubeSat satellite development, radio and optical telescope construction, astrophotography, and space research focusing on deep sky objects, planets, the Moon, and the Sun.
+              <br />ASFSA exemplifies Fulton Science Academy Private School&apos;s iCare values—integrity, curiosity, advocacy, resiliency, and empathy. Through our commitment to rigorous scientific research and ethical practices, we uphold the highest standards of integrity. We foster curiosity by encouraging students to explore the wonders of the cosmos and engage in innovative projects. Our members are advocates for STEM education, actively participating in outreach to inspire and educate others. We also promote resiliency by equipping students with the skills to navigate complex challenges in space exploration, while our focus on mentorship and collaboration underscores the importance of empathy in building a supportive and inclusive community.
               </p>
             </div>
-          </ParallaxLayer>
 
+            <h1 className='text-5xl mt-[12vh] font-poppins font-semibold'>Our Vision</h1>
+            <p className="my-[8vh] text-xl font-poppins w-3/4 lg:w-1/2 text-center text-gray-400">
+              ASFSA is a dynamic network of current students, alumni, faculty, and affiliated experts and enthusiasts, all dedicated to cultivating the next generation of space explorers. Our vision is to build an epistemic community united by a shared passion for exploring and discovering the vastness of space. We strive to equip our members with the necessary resources, tools, knowledge, and skills to become recognized and trusted sources of astronomical expertise.
+              <br />We are committed to training future experts who will advance our understanding of the universe through collaborative research, education, and innovation. These experts will be empowered to influence and guide the global scientific community and public policy by providing authoritative insights and solutions to complex astronomical and space-related challenges.
+              <br />Through our dedication to knowledge-sharing and interdisciplinary collaboration, we aim to foster a network of experts and enthusiasts who contribute to scientific, educational, and technological advancements, deepening humanity&apos;s understanding of the cosmos and its connection to our world.
+              <br />The ASFSA community regularly gathers for collaborative projects, field trips, and hands-on learning experiences. In the near future, our goal is to organize astronomy and space conferences that bring together students, experts, and alumni to showcase their research, share projects, and exchange ideas and experiences. These events will foster a vibrant community of learners, providing opportunities for networking, mentorship, and the advancement of knowledge in the fields of astronomy and space science.
+              <br />The ASFSA team has embarked on publishing a peer-reviewed student research journal—Scripta Astronomia—to provide a scientific platform for our community to share their research and projects. This initiative empowers students to take active roles as editors, reviewers, and core contributors, fostering a culture of academic rigor, collaboration, and scholarly communication within the ASFSA. Through Scripta Astronomia, we aim to highlight the innovative work of our members, encouraging them to contribute meaningfully to the broader scientific community and advance their expertise in astronomy and space science.
+            </p>
     
 
-          <ParallaxLayer offset={1} speed={0.5}>
-            <div className='flex w-full flex-col ml-[20vw]'>
-              <h3 className="text-2xl lg:text-3xl w-3/4 lg:w-1/2 font-poppins text-button-purple font-semibold">OUR MISSION</h3>
-              <h1 className="text-4xl lg:text-5xl w-3/4 lg:w-1/2 mt-6 mb-[6vh] font-poppins font-semibold">Astronomy through creation <br />and connection.</h1>
+          
+            <div className='flex w-full flex-col items-center'>
+              <h3 className="text-2xl lg:text-3xl w-3/4 lg:w-1/2 font-poppins text-button-purple font-semibold text-center">OUR MISSION</h3>
+              <h1 className="text-4xl lg:text-5xl w-3/4 lg:w-1/2 mt-6 mb-[6vh] font-poppins font-semibold text-center">Astronomy through creation <br />and connection.</h1>
 
               <div className="flex flex-col lg:flex-row gap-4 justify-center items-center sm:w-full lg:w-3/4 h-auto min-h-[200px] mb-20">
                 <div className="w-3/4 lg:w-1/3 h-min-[200px] flex flex-col bg-gradient-to-r from-gray-50/20 to-gray-50/10 p-6 rounded-2xl backdrop-blur">
@@ -60,8 +68,6 @@ export default function Mission() {
                 </div>
               </div>
             </div>
-          </ParallaxLayer>
-        </Parallax>
       </div>
     </>
   );
