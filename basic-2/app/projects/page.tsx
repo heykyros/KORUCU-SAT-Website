@@ -85,7 +85,7 @@ A radio telescope is a specialized antenna designed to detect radio waves emitte
                         <h1 className="w-4/5 text-[18px] leading-8 self-center mt-[10%]">
                         The Communications team of the satellite project built a Ground Radio Station capable of tracking and communicating with satellites. This station will be used to communicate with KorucuSAT and other satellites.
 
-A ground radio station is a facility equipped with antennas and communication equipment used to track and communicate with satellites. It sends and receives radio signals, allowing the exchange of data, commands, and telemetry. By accurately pointing its antenna towards a satellite's position, it can maintain communication as the satellite moves across the sky.
+A ground radio station is a facility equipped with antennas and communication equipment used to track and communicate with satellites. It sends and receives radio signals, allowing the exchange of data, commands, and telemetry. By accurately pointing its antenna towards a satellites position, it can maintain communication as the satellite moves across the sky.
 
 
 
